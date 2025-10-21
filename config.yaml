@@ -1,0 +1,14 @@
+utility_agents:
+  - agent_class: CustomAgent
+    agent_name: "Recommender Agent"
+    agent_description: |
+      The Recommender Agent is a specialist in item recommendations. For instance,
+      it can provide users with costume recommendations, items to purchase, food,
+      decorations, and so on. 
+    config: {}
+
+super_agents: []
+
+orchestrator:
+  agent_list:
+    - agent_name: "Recommender Agent"

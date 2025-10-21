@@ -1,0 +1,13 @@
+version: 1
+runtime: "ai_refinery"
+start:
+  command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7070"]
+  port: 7070
+  configSchema:
+    properties:
+      apiKey:
+        type: "string"
+        env_variable_name: "API_KEY"
+        description: "Your AI Refinery API key"
+        required: true
+        mask: true
